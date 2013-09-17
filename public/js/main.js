@@ -5,7 +5,7 @@ socket.on('entry', function (data) {
 });
 
 setInterval(60000, function () {
-	$.get('/draw', function () {
+	$.get('/draw.json', function () {
 
 	});
 });
