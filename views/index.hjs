@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			<title>Twiliocon SendGrid Giveaway</title>
+			<meta name="description" content="">
+			<meta name="viewport" content="width=device-width">			
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="css/flipclock.css">
+			<link rel="stylesheet" href="css/cheap-responsive-grid.css">
+			<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<div class="container clearfix">
+			<img src="img/logo.png" alt="SendGrid">
+			<div class="enter">
+				<h2 class="request">Enter To Win Awesome Prizes</h2>
+				<h2 class="prompt"><span class="prompt">email</span> <span class="address">enter@bymail.in</span></h2>
+				<p>Make sure you include your phone number in the email.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row main">
+		<div id="prizes" class="clearfix col span_2_of_3">
+			<h1>Win One Of Nine Awesome Prizes</h1>
+			<ul>
+				<li>
+					<img src="img/pcduino.png" alt="">
+					<h2><span>1</span> pcDuino</h2>
+				</li>
+				<li>
+					<img src="img/arduino.png" alt="">
+					<h2><span>4</span> Arduinos</h2>
+				</li>
+				<li>
+					<img src="img/raspberry-pi.png" alt="">
+					<h2><span>4</span> Raspberry Pis</h2>
+				</li>
+			</ul>
+		</div>
+		<div id="next" class="col span_1_of_3">
+			<h1>Next Drawing</h1>
+			<div id="clock"></div>
+		</div>
+		<div id="who" class="col span_1_of_3">
+			<h1>Entries</h1>
+			<ul class="face-list">
+				{{#entries}}
+					<li><img src="https://gravatar.com/avatar/{{hash}}?http%3A%2F%2Fd.pr%2Fi%2FaEL3%2B&s=100" alt=""></li>
+				{{/entries}}
+			</ul>
+		</div>
+	</div>
+			
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="js/vendor/prefixfree.min.js"></script>
+	<script src="js/vendor/flipclock/flipclock.min.js"></script>
+	<script src="socket.io/socket.io.js"></script>
+
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

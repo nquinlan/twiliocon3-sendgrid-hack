@@ -1,0 +1,11 @@
+[
+	{ "name" : "Arduino Uno",	"time": { "$date" : 1379451600000 } },
+	{ "name" : "Raspberry Pi",	"time": { "$date" : 1379458800000 } },
+	{ "name" : "Arduino Uno",	"time": { "$date" : 1379523600000 } },
+	{ "name" : "Raspberry Pi",	"time": { "$date" : 1379530800000 } },
+	{ "name" : "Arduino Uno",	"time": { "$date" : 1379538000000 } },
+	{ "name" : "Raspberry Pi",	"time": { "$date" : 1379545200000 } },
+	{ "name" : "Arduino Uno",	"time": { "$date" : 1379617200000 } },
+	{ "name" : "Raspberry Pi",	"time": { "$date" : 1379624400000 } },
+	{ "name" : "pcDuino",		"time": { "$date" : 1379631600000 } }
+]

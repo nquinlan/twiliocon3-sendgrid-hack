@@ -1,0 +1,182 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@-webkit-keyframes gpulse {
+	0% { background-size: 10%, 200%; }
+	50% { background-size: 10%, 100%; }
+	100% { background-size: 10%, 200%; }
+}
+
+@keyframes gpulse {
+	0% { background-size: 10%, 200%; }
+	50% { background-size: 10%, 100%; }
+	100% { background-size: 10%, 200%; }
+}
+
+@-webkit-keyframes spulse {
+	0% { background-size: 10%, 200%; }
+	50% { background-size: 10%, 100%; }
+	100% { background-size: 10%, 200%; }
+}
+
+@keyframes spulse {
+	0% { text-shadow: 1px 1px 10px #000; }
+	50% { text-shadow: 1px 1px 10px #000; }
+	100% { text-shadow: 1px 1px 10px #000; }
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.jumbotron {
+	padding: 50px;
+	background: rgb(44,83,158); /* Old browsers */
+	background: url(../img/paper.png), linear-gradient(to bottom,  rgba(44,83,158,1) 0%,rgba(34,66,122,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#22427a',GradientType=0 ); /* IE6-9 */
+	background-size: 10%, 100%;
+	animation: gpulse 3s linear infinite;
+}
+
+.jumbotron .container {
+	max-width: 1027px;
+	margin: 0 auto;
+}
+
+.jumbotron img {
+	float: left;
+	width: 350px;
+	margin: 15px 50px 0 0;
+}
+
+.jumbotron .enter {
+	float: right;
+	max-width: 470px;
+	text-align: center;
+	color: #F9F9F0;
+}
+
+.jumbotron .enter h2 {
+	margin: 0;
+	line-height: 1;
+}
+
+.jumbotron .enter h2.request {
+	font-size: 2em;
+	margin-bottom: 7px;
+}
+
+.jumbotron .enter h2.prompt span.prompt {
+	color: #BBB;
+}
+
+.jumbotron .enter h2.prompt span.address {
+	font-size: 2em;
+	color: #F00;
+	text-shadow: 1px 1px 70px #000;
+	animation: spulse 1s ease-in-out infinite;
+}
+
+.jumbotron .enter p {
+	margin: 10px 0 0;
+}
+
+.main {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+#prizes {
+	text-align: center;
+}
+
+#prizes ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+#prizes ul li {
+	position: relative;
+	float: left;
+	margin: 30px;
+	height: 250px;
+}
+
+#prizes ul li img {
+	max-width: 150px;
+	max-height: 200px;
+}
+
+#prizes ul li h2 {
+	position: absolute;
+	top: 215px;
+	left: 0;
+	right: 0;
+}
+
+#next #clock {
+	margin: 0 auto;
+	width: 460px;
+}
+
+#who .face-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#who .face-list li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+#who .face-list li img {
+	max-width: 50px;
+}
+
+/** HELPER CLASSES **/
+
+.clear {
+	clear: both;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}

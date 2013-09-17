@@ -1,0 +1,17 @@
+{
+  "name": "twiliocon-hack",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.4.*",
+    "hjs": "0.0.*",
+    "mimelib": "0.2.*",
+    "mongoose": "3.6.*",
+    "sendgrid": "0.3.0-rc.1.7",
+    "socket.io": "0.9.*",
+    "twilio": "1.1.4"
+  },
+  "engines": {
+    "node": "0.10.*"
+  }
+}
