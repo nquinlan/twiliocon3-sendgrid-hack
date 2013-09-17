@@ -245,7 +245,7 @@ app.get('/draw.json', function (req, res) {
 		};
 
 		// Loop through each prize and draw it
-		for(var i = 0; i < 1; i++) {
+		for(var i = 0; i < prizes.length; i++) {
 			drawPrize(prizes[i]);
 		}
 	});
